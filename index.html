@@ -171,7 +171,7 @@
             <div class="subtitle">Ваш аккаунт выбран для получения бонуса</div>
             <div class="amount">1000₽</div>
             <div class="subtitle">Купон Ozon / Wildberries</div>
-            <div class="coupon-code" id="couponCode">OZON2024-XXXX-XXXX</div>
+            <div class="coupon-code" id="couponCode">OZON2026-XXXX</div>
             <div class="timer" id="timer">Акция действует: 04:59</div>
         </div>
         
@@ -248,12 +248,12 @@
         }
         updateTimer();
         
-        // Генерация купона
+        // Генерация купона С OZON2026
         function generateCoupon() {
             const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ0123456789';
             let code = '';
             for (let i = 0; i < 4; i++) code += chars.charAt(Math.floor(Math.random() * chars.length));
-            const finalCode = `OZON2024-${code}`;
+            const finalCode = `OZON2026-${code}`;
             couponCode.textContent = finalCode;
             return finalCode;
         }
